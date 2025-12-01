@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мокеев Степан | ML Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Animation -->
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-avatar-container">
+                <img src="assets/image.png" alt="Степан Мокеев" class="hero-avatar">
+            </div>
+            <h1 id="greeting">Привет, я Степан!</h1>
+            <h2>ML Engineer</h2>
+            <p>Создаю интеллектуальные системы, LLM-агентов и сложные веб-приложения. Превращаю идеи в работающий код.
+            </p>
+            <div class="hero-btns">
+                <a href="#contacts" class="btn btn-primary">Связаться <i class="fas fa-paper-plane"></i></a>
+                <a href="#projects" class="btn btn-secondary">Мои работы <i class="fas fa-code"></i></a>
+                <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary">Резюме <i
+                        class="fas fa-file-pdf"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Обо <span>мне</span></h2>
+
+            <div class="glass-card">
+                <div class="terminal-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="terminal-content">
+                    <p>
+                        <span style="color: #22c55e;">root@stepan:~$</span> cat about.txt<br><br>
+                        Я — 17-летний ML-инженер и студент НТУ «Сириус». Занимаюсь проектной деятельностью уже 6 лет,
+                        программированием еще больше.
+                        Моя страсть — это искусственный интеллект и его применение в реальных задачах.
+                        Я не просто пишу код, я создаю продукты, которые побеждают на конкурсах/конференциях и решают
+                        проблемы
+                        людей.<br><br>
+                        Лидер по натуре: вижу цель, иду к победе.
+                        Быстро учусь, не боюсь сложных задач и всегда ищу оптимальные решения. Умею работать как в
+                        команде
+                        так и
+                        самостоятельно.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Мой <span>путь</span></h2>
+
+            <div class="timeline">
+                <!-- Item 1 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date">2025 — Настоящее время</span>
+                        <h3 class="role">Студент IT-специалитета</h3>
+                        <div class="company">НТУ «Сириус»</div>
+                        <p>Обучение на передовой программе в сфере информационных технологий.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="date">2023 — 2025</span>
+                        <h3 class="role">ML Developer / Fullstack</h3>
+                        <div class="company">Ai4life</div>
+                        <p>Коммерческая разработка, автоматизация процессов с помощью ИИ, работа с зарубежными
+                            заказчиками.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date">2022 — 2023</span>
+                        <h3 class="role">Freelance Developer</h3>
+                        <div class="company">Self-employed</div>
+                        <p>Разработка сервисов с интеграцией AI-технологий.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="date">2013 — 2024</span>
+                        <h3 class="role">Ученик</h3>
+                        <div class="company">Гимназия №79, Ульяновск</div>
+                        <p>Фундаментальное образование, начало пути в программировании.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (New Layout) -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Избранные <span>проекты</span></h2>
+
+            <div class="projects-layout">
+                <!-- Sidebar Navigation -->
+                <div class="projects-sidebar">
+                    <div class="project-nav-item active" data-project="proj-1">
+                        Junior Assistant
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="project-nav-item" data-project="proj-2">
+                        BookMind
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="project-nav-item" data-project="proj-3">
+                        Инвест-Дайжест
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="project-nav-item" data-project="proj-4">
+                        BookVerse
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="project-nav-item" data-project="proj-5">
+                        Детекция циклонов
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="project-nav-item" data-project="proj-6">
+                        Alfa-search
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="project-nav-item" data-project="proj-7">
+                        RL-Physics дообучение
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Content Area -->
+                <div class="projects-content-area">
+                    <!-- Project 7 (New) -->
+                    <div id="proj-7" class="project-detail-card">
+                        <div class="project-header">
+                            <div>
+                                <h3 class="project-title-large">RL-Physics дообучение</h3>
+                                <span class="project-badge">Solo Developer | Commercial Project</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Коммерческий проект для Т-Банка (прошел отбор на место в проекте).<br><br>
+                            Реализовал физическую RL-среду, моделирующую законы Ома и правила Кирхгофа для параллельных
+                            и последовательных цепей.
+                            С помощью Reinforcement Learning (RL) дообучил модель решать физические задачи, увеличив
+                            точность решений на 50% по сравнению с базовой моделью.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">Reinforcement Learning</span>
+                            <span class="tech-pill">Physics Simulation</span>
+                            <span class="tech-pill">Model Fine-tuning</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 1 -->
+                    <div id="proj-1" class="project-detail-card active">
+                        <div class="project-header">
+                            <div>
+                                <h3 class="project-title-large">Junior Assistant</h3>
+                                <span class="project-badge">Lead LLM Developer</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Проект от партнера "Т-Банк" в рамках очного этапа "Больших вызовов 2025". Разработал
+                            сложного LLM-агента,
+                            способного самостоятельно принимать решения и использовать инструменты (Tool
+                            Calling).<br><br>
+                            Реализовал систему долгосрочной памяти (LTM), обеспечил безопасность (Safety) и
+                            спроектировал архитектуру взаимодействия с сервисами (VLM, Imagen, LTM, Backend).
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">LLM Agents</span>
+                            <span class="tech-pill">Tool Calling</span>
+                            <span class="tech-pill">LTM Memory</span>
+                            <span class="tech-pill">Safety</span>
+                            <span class="tech-pill">Deployment</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div id="proj-2" class="project-detail-card">
+                        <div class="project-header">
+                            <div>
+                                <h3 class="project-title-large">BookMind</h3>
+                                <span class="project-badge">Solo Developer</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Мой сольный проект для помощи чтению книг детям с дислексией.<br><br>
+                            Реализовал собственное RAG-решение, дообучил Stable Diffusion 3.5 Turbo (LoRA) для генерации
+                            иллюстраций. Внедрил голосовое управление сайтом через ИИ-агента. Призер Больших Вызовов
+                            2025 (суперфиналист, 7 место), приглашение на Международный научный съезд ученых. Защита
+                            проекта на конгрессе молодых ученых 2025.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">RAG</span>
+                            <span class="tech-pill">Stable Diffusion (LoRA)</span>
+                            <span class="tech-pill">Voice AI</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div id="proj-3" class="project-detail-card">
+                        <div class="project-header">
+                            <div>
+                                <h3 class="project-title-large">Инвест-Дайжест</h3>
+                                <span class="project-badge">ML Engineer</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Победитель очного этапа международного хакатона "Технострелка 2024", где я выступал в роли
+                            ML Engineer. Проект "Инвест-Дайжест" - это агрегатор и суммаризатор инвестиционных новостей.
+                            Мои задачи - разработка логики валидации данных, использование LLM-модели для
+                            генерации суммаризаций и агрегации новостей. Я также отвечал за деплой всего сервиса и
+                            разработку веб-приложения для Telegram. По итогам хакатона мы заняли 1 место и получили
+                            специальную номинацию за нетривиальное решение.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">NLP</span>
+                            <span class="tech-pill">Summarization</span>
+                            <span class="tech-pill">FastAPI</span>
+                            <span class="tech-pill">Web App TG</span>
+                            <span class="tech-pill">Deployment</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div id="proj-4" class="project-detail-card">
+                        <div class="project-header">
+                            <div>
+                                <h3 class="project-title-large">BookVerse</h3>
+                                <span class="project-badge">Team Lead</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            В рамках конкурса Сириус ИИ 2024 разработан сайт для чтения книг с умным
+                            AI-ассистентом.<br><br>
+                            С моей стороны была полная реализация ML-части, а также помощь в разработке Frontend и
+                            Backend. Тимлид команды. По итогам конкурса выиграли номинацию за самое удобное решение для
+                            пользователя.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">ML Engineer</span>
+                            <span class="tech-pill">AI Assistant</span>
+                            <span class="tech-pill">Team Lead</span>
+                        </div>
+                        <a href="https://github.com/bot5020" target="_blank"
+                            class="btn btn-secondary project-link-btn">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div id="proj-5" class="project-detail-card">
+                        <div class="project-header">
+                            <div>
+                                <h3 class="project-title-large">Детекция тропических циклонов</h3>
+                                <span class="project-badge">Team Lead | 1 место (SberAI)</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            В рамках конкурса Сириус ИИ 2023 разработана система оперативного предупреждения и
+                            обнаружения циклонов.<br><br>
+                            Для проекта я изучал методы классификации изображений, дообучал модель yolov8n, был лидером
+                            разработки в команде.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">Computer Vision</span>
+                            <span class="tech-pill">Classification</span>
+                            <span class="tech-pill">Team Lead</span>
+                            <span class="tech-pill">SberAI</span>
+                        </div>
+                        <a href="https://github.com/pocketgodru/Detection_cyclone" target="_blank"
+                            class="btn btn-secondary project-link-btn">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div id="proj-6" class="project-detail-card">
+                        <div class="project-header">
+                            <div>
+                                <h3 class="project-title-large">Alfa-search</h3>
+                                <span class="project-badge">ML Lead</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            В рамках Международного научного съезда школьников 2025 года разработан сервис для поиска
+                            научных статей
+                            "Alfa-search".<br><br>
+                            В проекте отвечал за всю ML часть, а также помогал в разработке Frontend и Backend и их
+                            интеграцию. Реализовал RAG решение для поиска подходящих чанков из статей, Qdrant для
+                            хранения векторов и векторного поиска, а также LLM-агента, которыый итеративно обрабатывает
+                            запросы, пока не найдет подходящий контекст для ответа. Также занимался деплоем решения.
+                            Наше решение превзошло ключевые
+                            метрики заказчика по сравнению с Perplexity.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">RAG</span>
+                            <span class="tech-pill">Qdrant</span>
+                            <span class="tech-pill">LLM Agents</span>
+                            <span class="tech-pill">Deploy</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Мои <span>навыки</span></h2>
+
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3 style="margin-bottom: 20px; color: var(--accent-color);">Hard Skills</h3>
+                    <div class="skill-item">
+                        <i class="fas fa-brain skill-icon"></i>
+                        <span>LLM Agents & Tool Calling</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-project-diagram skill-icon"></i>
+                        <span>RAG & Vector Search Architecture</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-microchip skill-icon"></i>
+                        <span>Fine-tuning (LoRA, PEFT)</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-network-wired skill-icon"></i>
+                        <span>System Design for AI Apps</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server skill-icon"></i>
+                        <span>Backend Integration (FastAPI, Docker)</span>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 style="margin-bottom: 20px; color: var(--accent-color);">Soft Skills</h3>
+                    <div class="skill-item">
+                        <i class="fas fa-users skill-icon"></i>
+                        <span>Team Leadership (Team Lead)</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-lightbulb skill-icon"></i>
+                        <span>Product Vision</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chalkboard-teacher skill-icon"></i>
+                        <span>Менторство и обучение</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-bolt skill-icon"></i>
+                        <span>Работа в стрессовых условиях</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь <span>со мной</span></h2>
+
+            <div class="contacts-container">
+                <a href="https://t.me/stepprog" target="_blank" class="contact-btn">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+                <a href="https://github.com/bot5020" target="_blank" class="contact-btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="tel:+79374574965" class="contact-btn">
+                    <i class="fas fa-phone"></i> Позвонить
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Мокеев Степан. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
