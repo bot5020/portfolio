@@ -209,7 +209,7 @@ nav {
 
 /* Sections */
 section {
-    padding: 80px 0;
+    padding: 55px 0;
     opacity: 0;
     transform: translateY(40px);
     transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -222,7 +222,6 @@ section.visible {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -322,7 +321,6 @@ section.visible {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
-    margin-left: 15px;
 }
 
 .btn-secondary:hover {
@@ -355,34 +353,81 @@ section.visible {
 }
 
 /* Terminal Style (About) - macOS Window */
-.terminal-header {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+/* Window Frame - macOS Style (About Me) */
+.window-frame {
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    transition: transform 0.3s;
 }
 
-.dot {
+.window-frame:hover {
+    transform: translateY(-5px);
+}
+
+.window-header {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.window-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.control {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.red {
+.control.red {
     background: #ff5f57;
     border: 1px solid #e0443e;
 }
 
-.yellow {
+.control.yellow {
     background: #febc2e;
     border: 1px solid #dba522;
 }
 
-.green {
+.control.green {
     background: #28c840;
     border: 1px solid #1aab29;
+}
+
+.window-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.window-content {
+    padding: 30px;
+    color: #d1d1d6;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.typing-effect {
+    color: #22c55e;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: monospace;
 }
 
 .section-title {
@@ -396,6 +441,7 @@ section.visible {
 
 .section-title span {
     background: linear-gradient(135deg, #2997ff, #bf5af2);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -624,6 +670,82 @@ section.visible {
     align-self: flex-start;
 }
 
+/* Additional Projects Note - Premium macOS Style */
+.additional-projects-note {
+    margin-top: 50px;
+    position: relative;
+    padding: 35px 40px;
+    background: linear-gradient(135deg,
+            rgba(30, 30, 30, 0.6) 0%,
+            rgba(40, 40, 40, 0.6) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    backdrop-filter: blur(20px) saturate(120%);
+    -webkit-backdrop-filter: blur(20px) saturate(120%);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:
+        0 8px 32px 0 rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+        0 0 30px rgba(41, 151, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.additional-projects-note::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            transparent 100%);
+}
+
+
+.additional-projects-note:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 40px 0 rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.12),
+        0 0 40px rgba(41, 151, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.additional-projects-note p {
+    color: #d1d1d6;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.additional-projects-note i {
+    color: #5ac8fa;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 8px rgba(90, 200, 250, 0.3));
+}
+
+
+.additional-projects-note strong {
+    color: white;
+    font-weight: 600;
+}
+
 /* Skills - Grid Cards */
 .skills-container {
     display: flex;
@@ -842,6 +964,24 @@ body.hovering .cursor-outline {
         font-size: 3rem;
     }
 
+    /* Hero Buttons - Mobile Fix */
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        /* Gap between buttons */
+        padding: 0 10px;
+        display: flex;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0 !important;
+        margin-bottom: 0;
+        /* Use gap instead */
+    }
+
     .nav-links {
         display: none;
         position: absolute;
@@ -865,6 +1005,7 @@ body.hovering .cursor-outline {
         display: block;
     }
 
+    /* Timeline Mobile Fixes */
     .timeline::after {
         left: 30px;
     }
@@ -875,8 +1016,19 @@ body.hovering .cursor-outline {
         padding-right: 0;
     }
 
+    /* Timeline Dots Centering Fix - Precise */
     .timeline-item::after {
-        left: 20px;
+        left: 30px;
+        /* Match the line position */
+        transform: translateX(-50%);
+        /* Center perfectly */
+        right: auto;
+        /* Reset right property */
+    }
+
+    .timeline-item.right::after {
+        left: 30px;
+        /* Ensure right items also align */
     }
 
     .timeline-item.left,
@@ -888,5 +1040,75 @@ body.hovering .cursor-outline {
     .skills-container {
         flex-direction: column;
         gap: 20px;
+    }
+
+    /* Contacts Mobile Fix */
+    .contacts-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Projects Mobile Improvements */
+    .projects-sidebar {
+        padding: 15px 10px;
+        gap: 10px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .projects-sidebar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-nav-item {
+        padding: 10px 16px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .project-nav-item.active {
+        background: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+    .projects-content-area {
+        padding: 25px 20px;
+    }
+
+    .project-title-large {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .project-badge {
+        display: inline-block;
+        margin-top: 8px;
+        white-space: normal;
+        line-height: 1.4;
+    }
+
+    /* Additional Projects Note - Mobile */
+    .additional-projects-note {
+        margin-top: 35px;
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+
+    .additional-projects-note p {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .additional-projects-note i {
+        font-size: 1.3rem;
     }
 }

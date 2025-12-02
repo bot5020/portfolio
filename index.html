@@ -43,7 +43,8 @@
             </div>
             <h1 id="greeting">Привет, я Степан!</h1>
             <h2>ML Engineer</h2>
-            <p>Создаю интеллектуальные системы, LLM-агентов и сложные веб-приложения. Превращаю идеи в работающий код.
+            <p>Создаю интеллектуальные системы, LLM-агентов и сложные веб-приложения. Превращу ваши идеи в работающий
+                код.
             </p>
             <div class="hero-btns">
                 <a href="#contacts" class="btn btn-primary">Связаться <i class="fas fa-paper-plane"></i></a>
@@ -55,31 +56,34 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">Обо <span>мне</span></h2>
 
-            <div class="glass-card">
-                <div class="terminal-header">
-                    <div class="dot red"></div>
-                    <div class="dot yellow"></div>
-                    <div class="dot green"></div>
+            <div class="window-frame">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="control red"></span>
+                        <span class="control yellow"></span>
+                        <span class="control green"></span>
+                    </div>
+                    <div class="window-title">about_me.txt</div>
                 </div>
-                <div class="terminal-content">
-                    <p>
-                        <span style="color: #22c55e;">root@stepan:~$</span> cat about.txt<br><br>
-                        Я — 17-летний ML-инженер и студент НТУ «Сириус». Занимаюсь проектной деятельностью уже 6 лет,
-                        программированием еще больше.
-                        Моя страсть — это искусственный интеллект и его применение в реальных задачах.
-                        Я не просто пишу код, я создаю продукты, которые побеждают на конкурсах/конференциях и решают
-                        проблемы
-                        людей.<br><br>
-                        Лидер по натуре: вижу цель, иду к победе.
-                        Быстро учусь, не боюсь сложных задач и всегда ищу оптимальные решения. Умею работать как в
-                        команде
-                        так и
-                        самостоятельно.
-                    </p>
+                <div class="window-content">
+                    <div class="terminal-text">
+                        <p class="typing-effect">> cat about_me.txt</p>
+                        <p class="about-text">
+                            Я — 17-летний ML-инженер и студент НТУ "Сириус". Постоянно прокачиваю компетенции в машинном
+                            обучении, генеративных моделях и инженерии ИИ-продуктов. Занимаюсь проектной деятельностью
+                            уже 6 лет, программированием еще больше.<br><br>
+                            Мне интересны не просто алгоритмы, а именно проектирование сложных систем и применение
+                            искусственного интеллекта в повседневной жизни. Я не просто пишу код, я создаю интересные
+                            продукты, которые побеждают на конкурсах и научных конференциях и решают проблемы
+                            людей.<br><br>
+                            Лидер по натуре: вижу цель — иду к победе. Быстро учусь, не боюсь сложных задач и всегда ищу
+                            оптимальные решения. Уверенно работаю как в команде, так и самостоятельно.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,17 +126,31 @@
                     </div>
                 </div>
 
-                <!-- Item 4 -->
+                <!-- Timeline Item 2 (New) -->
                 <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="date">2018 — 2024</span>
+                        <h3 class="role">Python Developer & Project Maker</h3>
+                        <p class="company">Детский технопарк «Кванториум» (Ульяновск)</p>
+                        <p class="description">
+                            Прошел путь от основ программирования до создания сложных проектов. Активный участник и
+                            победитель проектных конкурсов. Изучал Python, робототехнику и проектное управление.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item left">
                     <div class="timeline-content">
                         <span class="date">2013 — 2024</span>
                         <h3 class="role">Ученик</h3>
-                        <div class="company">Гимназия №79, Ульяновск</div>
-                        <p>Фундаментальное образование, начало пути в программировании.</p>
+                        <p class="company">Гимназия №79 (Ульяновск)</p>
+                        <p class="description">
+                            Закончил 9 классов в гимназии №79. Участвовал в олимпиадах по информатике и математике.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Projects Section (New Layout) -->
@@ -176,7 +194,7 @@
                 <!-- Content Area -->
                 <div class="projects-content-area">
                     <!-- Project 7 (New) -->
-                    <div id="proj-7" class="project-detail-card">
+                    <div id="proj-7" class="project-detail-card active">
                         <div class="project-header">
                             <div>
                                 <h3 class="project-title-large">RL-Physics дообучение</h3>
@@ -184,11 +202,17 @@
                             </div>
                         </div>
                         <p class="project-description">
-                            Коммерческий проект для Т-Банка (прошел отбор на место в проекте).<br><br>
-                            Реализовал физическую RL-среду, моделирующую законы Ома и правила Кирхгофа для параллельных
-                            и последовательных цепей.
-                            С помощью Reinforcement Learning (RL) дообучил модель решать физические задачи, увеличив
-                            точность решений на 50% по сравнению с базовой моделью.
+                            <strong>Описание:</strong> Индивидуальный коммерческий проект для Т-банка (полный цикл
+                            разработки).<br><br>
+                            <strong>Задача:</strong> Улучшить точность решения физических задач с помощью LLM (законы
+                            Ома и
+                            Кирхгофа) с
+                            помощью методов обучения с подкреплением.<br><br>
+                            <strong>Решение:</strong> Реализовал кастомную RL-среду, моделирующую физику
+                            электрических цепей. Провел эксперименты и дообучил LLM для более стабильного решения задач
+                            в этой среде.<br><br>
+                            <strong>Результат:</strong> Точность решения задач выросла на 50% по сравнению с базовой LLM
+                            моделью. Проект был успешно завершен и одобрен Т-банком.
                         </p>
                         <div class="project-tech-stack">
                             <span class="tech-pill">Reinforcement Learning</span>
@@ -198,29 +222,35 @@
                     </div>
 
                     <!-- Project 1 -->
-                    <div id="proj-1" class="project-detail-card active">
+                    <div id="proj-1" class="project-detail-card">
                         <div class="project-header">
                             <div>
                                 <h3 class="project-title-large">Junior Assistant</h3>
-                                <span class="project-badge">Lead LLM Developer</span>
+                                <span class="project-badge">Lead LLM Developer | Team Project</span>
                             </div>
                         </div>
                         <p class="project-description">
-                            Проект от партнера "Т-Банк" в рамках очного этапа "Больших вызовов 2025". Разработал
-                            сложного LLM-агента,
-                            способного самостоятельно принимать решения и использовать инструменты (Tool
-                            Calling).<br><br>
-                            Реализовал систему долгосрочной памяти (LTM), обеспечил безопасность (Safety) и
-                            спроектировал архитектуру взаимодействия с сервисами (VLM, Imagen, LTM, Backend).
+                            <strong>Описание:</strong> Командный проект от партнера "Т-Банк" на очном этапе конкурса
+                            "Большие вызовы" (роль: Lead Developer).<br><br>
+                            <strong>Задача:</strong> Внедрить персонализацию для проверки гипотез в рамках эксперимента,
+                            поставленного Т-Банком для интеллектуального Джуниор ассистента.<br><br>
+                            <strong>Мой вклад:</strong> Как Lead Developer, спроектировал архитектуру мульти-агентной
+                            системы. Лично реализовал ядро на базе LLM с механизмом Tool Calling для вызова внешних API
+                            разработанных сервисов.
+                            Разработал модуль долгосрочной памяти (LTM) для удержания фактов пользователя и Safety Layer
+                            для фильтрации данных. Продумал и разработал все tools для взаимодействия с агентом.
+                            Занимался
+                            развертыванием, помогал в других сервисах.<br><br>
+                            <strong>Результат:</strong> Разработанный LLM агент самостоятельно планирует цепочки
+                            действий и успешно обрабатывает
+                            запросы пользователей.
                         </p>
                         <div class="project-tech-stack">
                             <span class="tech-pill">LLM Agents</span>
                             <span class="tech-pill">Tool Calling</span>
                             <span class="tech-pill">LTM Memory</span>
-                            <span class="tech-pill">Safety</span>
-                            <span class="tech-pill">Deployment</span>
+                            <span class="tech-pill">Safety Layer</span>
                         </div>
-
                     </div>
 
                     <!-- Project 2 -->
@@ -228,20 +258,28 @@
                         <div class="project-header">
                             <div>
                                 <h3 class="project-title-large">BookMind</h3>
-                                <span class="project-badge">Solo Developer</span>
+                                <span class="project-badge">Solo Developer | Призер БВ'25</span>
                             </div>
                         </div>
                         <p class="project-description">
-                            Мой сольный проект для помощи чтению книг детям с дислексией.<br><br>
-                            Реализовал собственное RAG-решение, дообучил Stable Diffusion 3.5 Turbo (LoRA) для генерации
-                            иллюстраций. Внедрил голосовое управление сайтом через ИИ-агента. Призер Больших Вызовов
-                            2025 (суперфиналист, 7 место), приглашение на Международный научный съезд ученых. Защита
-                            проекта на конгрессе молодых ученых 2025.
+                            <strong>Описание:</strong> Авторский сольный проект (Fullstack + ML). Разработан в течение
+                            1.5 месяца в свободное время.<br><br>
+                            <strong>Задача:</strong> Помочь детям с дислексией воспринимать текстовую информацию через
+                            визуализацию и аудио.<br><br>
+                            <strong>Решение:</strong> Разработал платформу с собственной RAG-системой для
+                            точечного получения релевантной информации из большого объема текстовых данных.
+                            Дообучил модель Stable Diffusion 3.5 (LoRA) для улучшения стиля генерации иллюстраций к
+                            сценам книги.
+                            Внедрил ИИ агента, который полностью управляет платформой путем голосового
+                            взаимодействия.<br><br>
+                            <strong>Результат:</strong> Суперфиналист, призер (7 место) конкурса "Большие Вызовы 2025",
+                            приглашение на Конгресс
+                            молодых ученых 2025.
                         </p>
                         <div class="project-tech-stack">
                             <span class="tech-pill">RAG</span>
                             <span class="tech-pill">Stable Diffusion (LoRA)</span>
-                            <span class="tech-pill">Voice AI</span>
+                            <span class="tech-pill">AI Agent</span>
                         </div>
                     </div>
 
@@ -250,24 +288,29 @@
                         <div class="project-header">
                             <div>
                                 <h3 class="project-title-large">Инвест-Дайжест</h3>
-                                <span class="project-badge">ML Engineer</span>
+                                <span class="project-badge">ML Engineer | 1 место Технострелка</span>
                             </div>
                         </div>
                         <p class="project-description">
-                            Победитель очного этапа международного хакатона "Технострелка 2024", где я выступал в роли
-                            ML Engineer. Проект "Инвест-Дайжест" - это агрегатор и суммаризатор инвестиционных новостей.
-                            Мои задачи - разработка логики валидации данных, использование LLM-модели для
-                            генерации суммаризаций и агрегации новостей. Я также отвечал за деплой всего сервиса и
-                            разработку веб-приложения для Telegram. По итогам хакатона мы заняли 1 место и получили
-                            специальную номинацию за нетривиальное решение.
+                            <strong>Описание:</strong> Командная разработка проекта на очном этапе хакатона
+                            "Технострелка".
+                            <br><br>
+                            <strong>Задача:</strong> Автоматизировать сбор и анализ инвестиционных новостей из множества
+                            источников и вывод их в удобном телеграм-боте.<br><br>
+                            <strong>Мой вклад:</strong> Разработал пайплайн валидации данных и логику суммаризации
+                            новостей на базе LLM. Отвечал за разработку бэкенда (FastAPI) и деплой всего сервиса в
+                            Docker, также разработал Web App (веб-приложение) сервиса в телеграме, занимался
+                            развертыванием
+                            всех архитектурных решений на сервере.<br><br>
+                            <strong>Результат:</strong> 1 место на международном хакатоне, MVP создан за 3 дня и ночи.
                         </p>
                         <div class="project-tech-stack">
-                            <span class="tech-pill">NLP</span>
-                            <span class="tech-pill">Summarization</span>
+                            <span class="tech-pill">NLP & Summarization</span>
                             <span class="tech-pill">FastAPI</span>
-                            <span class="tech-pill">Web App TG</span>
-                            <span class="tech-pill">Deployment</span>
+                            <span class="tech-pill">Docker</span>
                         </div>
+                        <a href="https://github.com/bot5020/InvestDigest" target="_blank"
+                            class="btn btn-secondary project-link-btn">GitHub <i class="fab fa-github"></i></a>
                     </div>
 
                     <!-- Project 4 -->
@@ -279,11 +322,13 @@
                             </div>
                         </div>
                         <p class="project-description">
-                            В рамках конкурса Сириус ИИ 2024 разработан сайт для чтения книг с умным
-                            AI-ассистентом.<br><br>
-                            С моей стороны была полная реализация ML-части, а также помощь в разработке Frontend и
-                            Backend. Тимлид команды. По итогам конкурса выиграли номинацию за самое удобное решение для
-                            пользователя.
+                            <strong>Описание:</strong> Командный проект на конкурсе "Сириус ИИ 2024" (роль: Team
+                            Lead).<br><br>
+                            <strong>Задача:</strong> Создать сайт для чтения книг с умным AI-ассистентом для улучшения
+                            пользовательского опыта.<br><br>
+                            <strong>Мой вклад:</strong> Управлял командой разработки. Полностью реализовал ML-часть
+                            ассистента и помогал с Fullstack-задачами (Frontend/Backend).<br><br>
+                            <strong>Результат:</strong> Номинация "Самое удобное решение" на конкурсе Сириус ИИ 2024.
                         </p>
                         <div class="project-tech-stack">
                             <span class="tech-pill">ML Engineer</span>
@@ -303,10 +348,13 @@
                             </div>
                         </div>
                         <p class="project-description">
-                            В рамках конкурса Сириус ИИ 2023 разработана система оперативного предупреждения и
-                            обнаружения циклонов.<br><br>
-                            Для проекта я изучал методы классификации изображений, дообучал модель yolov8n, был лидером
-                            разработки в команде.
+                            <strong>Описание:</strong> Командный проект на конкурсе "Сириус ИИ 2023" (роль: Team
+                            Lead).<br><br>
+                            <strong>Задача:</strong> Создать систему оперативного предупреждения и обнаружения
+                            тропических циклонов по спутниковым снимкам.<br><br>
+                            <strong>Мой вклад:</strong> Организовал работу команды. Исследовал методы Computer Vision,
+                            дообучал модель YOLOv8n для классификации снимков.<br><br>
+                            <strong>Результат:</strong> 1 место в номинации SberAI в конкурсе Сириус ИИ 2023.
                         </p>
                         <div class="project-tech-stack">
                             <span class="tech-pill">Computer Vision</span>
@@ -323,19 +371,22 @@
                         <div class="project-header">
                             <div>
                                 <h3 class="project-title-large">Alfa-search</h3>
-                                <span class="project-badge">ML Lead</span>
+                                <span class="project-badge">ML Engineer</span>
                             </div>
                         </div>
                         <p class="project-description">
-                            В рамках Международного научного съезда школьников 2025 года разработан сервис для поиска
-                            научных статей
-                            "Alfa-search".<br><br>
-                            В проекте отвечал за всю ML часть, а также помогал в разработке Frontend и Backend и их
-                            интеграцию. Реализовал RAG решение для поиска подходящих чанков из статей, Qdrant для
-                            хранения векторов и векторного поиска, а также LLM-агента, которыый итеративно обрабатывает
-                            запросы, пока не найдет подходящий контекст для ответа. Также занимался деплоем решения.
-                            Наше решение превзошло ключевые
-                            метрики заказчика по сравнению с Perplexity.
+                            <strong>Описание:</strong> Командный проект в рамках Международного научного съезда
+                            школьников 2025 (роль: ML Engineer).<br><br>
+                            <strong>Задача:</strong> Разработать поисковый движок по научным статьям, превосходящий
+                            аналоги по качеству ответов.<br><br>
+                            <strong>Мой вклад:</strong> Реализовывал всю ML логику. Реализовал RAG-архитектуру с
+                            векторным
+                            поиском (Qdrant) и итеративным LLM-агентом, который уточняет информацию для запроса, пока не
+                            получит достаточно информации для точечного ответа на заданный вопрос. Отвечал за
+                            интеграцию
+                            с Backend/Frontend и деплой проекта на сервер.<br><br>
+                            <strong>Результат:</strong> Решение превзошло метрики Perplexity по качеству ответов на
+                            тестовой выборке заказчика.
                         </p>
                         <div class="project-tech-stack">
                             <span class="tech-pill">RAG</span>
@@ -346,6 +397,16 @@
 
                     </div>
                 </div>
+            </div>
+
+            <!-- Additional Projects Note -->
+            <div class="additional-projects-note">
+                <p><i class="fas fa-info-circle"></i>
+                    <strong>Представлены только избранные проекты.</strong>
+                    Помимо них реализовано множество других полностью самостоятельных проектов, побеждавших на
+                    конкурсах,
+                    а также успешные коммерческие проекты (под NDA).
+                </p>
             </div>
         </div>
     </section>
@@ -378,6 +439,7 @@
                         <i class="fas fa-server skill-icon"></i>
                         <span>Backend Integration (FastAPI, Docker)</span>
                     </div>
+
                 </div>
 
                 <div class="skills-column">
