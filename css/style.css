@@ -209,7 +209,7 @@ nav {
 
 /* Sections */
 section {
-    padding: 25px 0;
+    padding: 55px 0;
     opacity: 0;
     transform: translateY(40px);
     transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
